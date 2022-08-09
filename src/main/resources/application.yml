@@ -1,0 +1,10 @@
+auth0:
+  audience: https://food-delivery.backend.com
+spring:
+  security:
+    oauth2:
+        resourceserver:
+            jwt:
+                issuer-uri: https://dev-7bo0-fzm.eu.auth0.com/
+#server:
+#  port: ${PORT}

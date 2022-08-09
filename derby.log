@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Wed Jul 27 19:46:40 CEST 2022:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0182-40c4-912f-00000c375fd0 
+on database directory memory:/home/relja/src/workspace-spring-tool-suite/food_delivery_backend/b61f84c1-092e-4686-81e9-a902ba0a4e1f with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@55054057 
+Loaded from file:/home/relja/.m2/repository/org/apache/derby/derby/10.14.2.0/derby-10.14.2.0.jar
+java.vendor=Private Build
+java.runtime.version=11.0.15+10-Ubuntu-0ubuntu0.22.04.1
+user.dir=/home/relja/src/workspace-spring-tool-suite/food_delivery_backend
+os.name=Linux
+os.arch=amd64
+os.version=5.15.0-41-generic
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
