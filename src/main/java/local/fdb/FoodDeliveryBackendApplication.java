@@ -21,7 +21,7 @@ public class FoodDeliveryBackendApplication {
         return new WebMvcConfigurerAdapter() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping("/**").allowedOrigins("http://localhost:4000");
+                registry.addMapping("/**").allowedOrigins("https://food-delivery-frontend-lyart.vercel.app");
             }
         };
     }
