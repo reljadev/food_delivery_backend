@@ -2,8 +2,8 @@
 The API is deployed at https://apifooddelivery.tk.
 ## Usage
 ### User
-Returns all registered users.
-`GET` /users
+Returns all registered users.\
+`GET` /users\
 Admin authorization required, by bearer token.
 ### City
 ### Restaurant
