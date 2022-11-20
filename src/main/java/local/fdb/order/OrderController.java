@@ -55,6 +55,8 @@ public class OrderController {
 		return null;
 	}
 	
+//	NOTE: not needed, because we get user id from jwt
+//	instead of storing it in a new order itself
 //	@PreAuthorize("#parameters.getUserId() == authentication.name")
 //	@PreAuthorize("hasAuthority('SCOPE_user')")
 	@RequestMapping(value = "/orders", method = RequestMethod.POST)

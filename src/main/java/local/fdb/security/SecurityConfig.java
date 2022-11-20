@@ -19,7 +19,6 @@ import org.springframework.security.oauth2.jwt.NimbusJwtDecoder;
 @SuppressWarnings("deprecation")
 @Configuration
 @EnableWebSecurity
-//@EnableGlobalMethodSecurity(securedEnabled = true)
 @EnableGlobalMethodSecurity(prePostEnabled = true)
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	
@@ -31,11 +30,12 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     
     @Override
 	public void configure(HttpSecurity http) throws Exception {
+    	//TODO: this needs fixing!
     	http.csrf().disable();
+    	
     	http.authorizeRequests()
     		// cities
 	        .mvcMatchers(HttpMethod.GET, "/cities").permitAll()
-//	        .mvcMatchers(HttpMethod.POST, "/cities").hasAuthority("SCOPE_admin")
 	        // meals
 	        .mvcMatchers(HttpMethod.GET, "/meals").permitAll()
 	        .mvcMatchers(HttpMethod.GET, "/meals").permitAll()
@@ -48,18 +48,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	        .anyRequest().authenticated()
 	        .and().cors()
 	        .and().oauth2ResourceServer().jwt();
-    	
-//    	http.
-//    		authorizeRequests().
-//	    	anyRequest().
-//	    	permitAll().
-//	    	and().
-//	    	httpBasic().
-//	    	and().
-//	    	csrf().disable();
-//        and().oauth2ResourceServer().jwt();
-//        and().cors().
-//        and().oauth2ResourceServer().jwt();
+    
 	}
     
     @Bean

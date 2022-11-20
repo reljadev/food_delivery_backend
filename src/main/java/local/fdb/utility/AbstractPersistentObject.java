@@ -4,7 +4,6 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Version;
 
-//TODO: could I somehow only use the logic of this class without making it the entity?
 @Entity
 public abstract class AbstractPersistentObject implements PersistentObject {
 
